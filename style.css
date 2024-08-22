@@ -1,143 +1,94 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+    src:url(fonts/OneDirection.ttf)format("truetype");
+    font-family: nos;
+}
+.paragraph{
+    text-align: center;
+    font-size: 30px;
+    font-family:sans-serif;
+    color: white;
+}
+.paragraph2{
+    text-align:center;
+    font-size: 100px;
+    font-family: nos;
+    color: white;
+}
+.menu-bar
+{
+text-align:center;
+background-color: #000000;
+}
+.menu-bar ul
+{
+   display: inline-flex;
+   color:floralwhite
+}
+.menu-bar ul li
+{
+    font-family: Impact;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
 }
 
-html {
-  font-family: "Roboto", "Noto Sans", "Helvetica", sans-serif;
-  font-size: 14px;
-  background-color: #3498DB;
-  height: 100%;
-}
+.menu-bar ul li:hover
+{
 
-.calculator {
-  width: 350px;
-  height: auto;
-  margin: 70px auto 0;
-  overflow: hidden;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    background: floralwhite;
+    color: #000000;
+    border-radius:3px;
 }
-
-.calculator span {
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.top {
-  position: relative;
-  height: 150px;
-  background-color: white;
-}
-
-.top .unit {
-  text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-weight: 700;
-  color: #757575;
-}
-
-.top .screen {
-  position: relative;
-  width: 100%;
-  top: 20%;
-  height: 80%;
-}
-
-.screen > div  {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 5px;
-  text-align: right;
-}
-
-.screen .input {
-  color: #757575;
-  height: 60%;
-  font-size: 35px;
-}
-
-.screen .result {
-  color: #9e9e9e;
-  font-size: 20px;
-  height: 40%;
-}
-
-.bottom {
-  background-color: #2D2D2D;
-  height: 300px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.bottom section {
-  position: relative;
-  height: 100%;
-  float: left;
-  display: flex;
-}
-
-.keys {
-  width: 80%;
+.paragraph5{
+    font-size: 20px;
+    font-family:Courier;
+    margin: 30px;
+    color: white;
 }
 
 
-.keys .column {
-  display: flex;
-  flex-grow: 1;
+
+.lets-go-btn{
+    color: floralwhite;
+    background: rgb(227, 26, 26);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: -15px; 
+}
+.lets-go-btn:hover{
+    background: rgb(54, 1, 1);
 }
 
-.keys .column, .operators {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.icons{
+    display: flex;
+    font-size: 3rem;
+    margin-top:0;
+    line-height: 0;
+    align-items: flex-end;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    
 }
 
-.keys .column span, .operators span {
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-  width: 100%;
-  line-height: 1;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.5s;
+.icons a { margin-right:75px; }
+
+.icons :hover{
+    transform: scale(1.5);
 }
 
-.keys .column span {
-  font-size: 25px;
+.footer{
+    background-color:black;
+    margin-top:28%;
 }
-
-.keys .column span:hover, .operators span:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.operators {
-  width: 20%;
-  font-size: 18px;
-  background-color: #434343;
-}
-
-.delete {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.credit {
-  display: block;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  margin: 0 auto;
-}
-
-.credit a, .error {
-  color: #C2185B;
+.p1{
+    color: floralwhite;
+    font-size: larger;
+    padding-bottom: 10px;
+    
 }
